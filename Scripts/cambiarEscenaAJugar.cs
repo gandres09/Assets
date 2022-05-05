@@ -7,6 +7,6 @@ public class cambiarEscenaAJugar : MonoBehaviour
 {
     public void menuJuego()
     {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("JuegoEscena");
     }
 }
