@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 2004949886}
   - component: {fileID: 2004949885}
   - component: {fileID: 2004949888}
+  - component: {fileID: 2004949889}
   m_Layer: 5
   m_Name: botonJugar
   m_TagString: Untagged
@@ -750,6 +751,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be0b0381b792954593b1710c708e6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2004949889
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004949882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9d78545be1af204ab83b4a5365761fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2135513810
 GameObject:
   m_ObjectHideFlags: 0
