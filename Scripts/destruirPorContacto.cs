@@ -15,18 +15,22 @@ public class destruirPorContacto : MonoBehaviour
     }
 
     //Al entrar en el objeto
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag != "Limites" || other.gameObject.tag != "Meteorito") {
-        if(other.gameObject.tag == "Player") {
-            SceneManager.LoadScene("Menu");
-        }
-        if(other.gameObject.tag == "bala"){
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-            
-            //Actualizo el contador
-            gameManager.actualizarContador();
-        }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag != "Limites" || other.gameObject.tag != "Meteorito")
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                SceneManager.LoadScene("Menu");
+            }
+            if (other.gameObject.tag == "bala")
+            {
+                Destroy(other.gameObject);
+                Destroy(gameObject);
+
+                //Actualizo el contador
+                gameManager.actualizarContador();
+            }
         }
     }
 }
