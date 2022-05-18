@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class lookAtMouse : MonoBehaviour
 {
-  [SerializeField]
-  Transform target;
-  
-  [SerializeField]
-  Camera mainCamera;
+    [SerializeField]
+    Transform target;
 
-  void Start()
+    [SerializeField]
+    Camera mainCamera;
+
+    void Start()
     {
         if (target == null)
         {
             target = transform;
         }
-        
+
         if (mainCamera == null)
         {
             mainCamera = Camera.main;
@@ -27,7 +27,7 @@ public class lookAtMouse : MonoBehaviour
     void Update()
     {
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.z = 0;
+        mouseWorldPosition.z = 1;
         Vector3 lookAtDirection = mouseWorldPosition - target.position;
         target.up = lookAtDirection;
     }

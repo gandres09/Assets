@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class destruirPorContacto : MonoBehaviour
 {
-
     private GameManager gameManager;
     void Start()
     {
@@ -21,7 +20,7 @@ public class destruirPorContacto : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                SceneManager.LoadScene("Menu");
+                gameManager.trueWait();
             }
             if (other.gameObject.tag == "bala")
             {
@@ -33,4 +32,5 @@ public class destruirPorContacto : MonoBehaviour
             }
         }
     }
+
 }

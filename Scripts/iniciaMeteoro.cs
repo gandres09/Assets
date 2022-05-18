@@ -11,10 +11,10 @@ public class iniciaMeteoro : MonoBehaviour
     {
         InvokeRepeating("ApareceMeteoro", velocidadAparicion, velocidadAparicion);
     }
-    
+
     void ApareceMeteoro()
     {
-        
+
         float numeroRandomX1 = Random.Range(-2f, -1.65f);
         float numeroRandomX2 = Random.Range(1.65f, 2f);
         float numeroRandomY1 = Random.Range(-1f, -0.86f);
@@ -24,31 +24,26 @@ public class iniciaMeteoro : MonoBehaviour
         {
             //poner prefab meteorito en la posicion de la variable numeroRandomX1 y numeroRandomY1
             Rigidbody2D meteoritoClone = Instantiate(meteoritoRigidBody, transform.position, transform.rotation);
-            meteoritoClone.transform.position = new Vector3(numeroRandomX1, numeroRandomY1, 0);
+            meteoritoClone.transform.position = new Vector3(numeroRandomX1, numeroRandomY1, 1);
         }
         else if (numeroRandom == 1)
         {
             //poner prefab meteorito en la posicion de la variable numeroRandomX2 y numeroRandomY1
             Rigidbody2D meteoritoClone = Instantiate(meteoritoRigidBody, transform.position, transform.rotation);
-            meteoritoClone.transform.position = new Vector3(numeroRandomX2, numeroRandomY1, 0);
+            meteoritoClone.transform.position = new Vector3(numeroRandomX2, numeroRandomY1, 1);
         }
         else if (numeroRandom == 2)
         {
             //poner prefab meteorito en la posicion de la variable numeroRandomX1 y numeroRandomY2
             Rigidbody2D meteoritoClone = Instantiate(meteoritoRigidBody, transform.position, transform.rotation);
-            meteoritoClone.transform.position = new Vector3(numeroRandomX1, numeroRandomY2, 0);
+            meteoritoClone.transform.position = new Vector3(numeroRandomX1, numeroRandomY2, 1);
         }
         else if (numeroRandom == 3)
         {
             //poner prefab meteorito en la posicion de la variable numeroRandomX2 y numeroRandomY2
             Rigidbody2D meteoritoClone = Instantiate(meteoritoRigidBody, transform.position, transform.rotation);
-            meteoritoClone.transform.position = new Vector3(numeroRandomX2, numeroRandomY2, 0);
+            meteoritoClone.transform.position = new Vector3(numeroRandomX2, numeroRandomY2, 1);
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

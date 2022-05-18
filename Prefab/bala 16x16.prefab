@@ -150,4 +150,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorito: {fileID: 7695299681836411420, guid: 7f8635379dcc3d34ead305eb67c33a46, type: 3}
-  velocidad: 20
+  velocidad: 10
