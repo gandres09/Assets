@@ -101,8 +101,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00052497536, y: 0.0015749186}
-  m_Size: {x: 0.09838632, y: 0.28002658}
+  m_Offset: {x: -0.000524953, y: -0.027117878}
+  m_Size: {x: 0.26354483, y: 0.30661994}
   m_Direction: 0
 --- !u!50 &5890649081807281825
 Rigidbody2D:
@@ -150,4 +150,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorito: {fileID: 7695299681836411420, guid: 7f8635379dcc3d34ead305eb67c33a46, type: 3}
-  velocidad: 10
+  velocidad: 3

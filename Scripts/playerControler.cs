@@ -25,6 +25,9 @@ public class playerControler : MonoBehaviour
 
     //Tiempo que tiene que transcurrir hasta el próximo disparo
     private float proximoDisparo;
+
+
+
     // Start is called before the first frame update
 
     void Start()
@@ -56,7 +59,6 @@ public class playerControler : MonoBehaviour
         }
         if (Input.GetButton("Fire1") && Time.time > proximoDisparo)
         {
-
             //Incremento el valor de proximo disparo
             proximoDisparo = Time.time + velocidadDisparo;
 

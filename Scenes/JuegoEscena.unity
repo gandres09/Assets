@@ -1049,7 +1049,7 @@ MonoBehaviour:
   contador: 0
   textoContador: {fileID: 1859498987}
   contadorHighScore: 0
-  textoHighScore: {fileID: 1398484810}
+  textoContadorHighScore: {fileID: 1398484810}
 --- !u!4 &1716730869
 Transform:
   m_ObjectHideFlags: 0
