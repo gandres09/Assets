@@ -22,6 +22,9 @@ public class cruzFollow : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
+
+        //hace invisible el cursor del mouse
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
